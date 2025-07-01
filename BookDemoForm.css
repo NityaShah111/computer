@@ -1,0 +1,90 @@
+.book-demo-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.book-demo-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #151f32;
+}
+
+.demo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-row input,
+.form-row select {
+  flex: 1 1 0;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #cfd8e3;
+  border-radius: 6px;
+  background: #f7fafd;
+  color: #151f32;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.form-row input:focus,
+.form-row select:focus {
+  border: 1.5px solid #3fa9f5;
+}
+
+.demo-form button {
+  padding: 14px;
+  background-color: #3fa9f5;
+  color: #fff;
+  font-size: 17px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.demo-form button:hover {
+  background-color: #e68900;
+}
+
+.form-message {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.form-message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.form-message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .book-demo-container {
+    padding: 16px;
+  }
+}

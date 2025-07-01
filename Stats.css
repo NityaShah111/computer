@@ -1,0 +1,39 @@
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 20px 40px;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: transparent;
+    color: #0d2c4f;
+}
+
+.stat-item {
+    margin: 20px;
+    min-width: 200px;
+}
+
+.stat-number {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #0d2c4f;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 1.2rem;
+    color: #0d2c4f;
+}
+
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+    }
+    .stat-number {
+        font-size: 3rem;
+    }
+    .stat-label {
+        font-size: 1rem;
+    }
+} 

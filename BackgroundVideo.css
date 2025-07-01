@@ -1,0 +1,82 @@
+.background-video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.background-video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+/* Ensure content is readable over the video */
+body {
+  position: relative;
+  z-index: 1;
+}
+
+/* Header and topbar should have solid backgrounds, not affected by video */
+.hitech-topbar {
+  background: #fff;
+  border-bottom: 1px solid #e5e7ef;
+  position: relative;
+  z-index: 20;
+}
+
+.hitech-header {
+  background: #fff;
+  border-bottom: 1.5px solid #e5e7ef;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  position: relative;
+  z-index: 20;
+}
+
+/* Make sure all content sections have proper background for readability */
+.section,
+.service-card,
+.key-highlights-section,
+.jcsm-mission-section {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Footer should have solid background, not affected by video */
+.footer {
+  background-color: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+/* Ensure text is readable */
+h1, h2, h3, h4, h5, h6, p, span, div {
+  color: #333;
+}
+
+/* Make sure the home page background doesn't interfere */
+.home-page-background {
+  position: relative;
+  z-index: 2;
+} 

@@ -1,0 +1,154 @@
+.courses-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 0;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.course-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.enroll-button {
+  margin-top: 15px;
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.enroll-button:hover {
+  background-color: #e69500;
+}
+
+/* Placement Student Banner Styles */
+.placement-banner {
+  width: 100%;
+  background: #0b6a8c;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+.placement-banner-bg {
+  position: relative;
+  width: 100%;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.placement-title {
+  color: #fff;
+  font-size: 64px;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: 32px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.placement-breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 30px;
+  gap: 8px;
+}
+.breadcrumb-link {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+.breadcrumb-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+.breadcrumb-separator {
+  color: #fff;
+  font-size: 22px;
+  margin: 0 8px;
+}
+.breadcrumb-current {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Decorative background elements */
+.placement-bg-decor {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+.placement-bg-decor::before {
+  content: '';
+  position: absolute;
+  left: -200px; top: -120px;
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  opacity: 0.5;
+}
+.placement-bg-decor::after {
+  content: '';
+  position: absolute;
+  right: -200px; top: -100px;
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  opacity: 0.5;
+}
+
+/* Dots pattern */
+.placement-bg-decor {
+  background-image:
+    radial-gradient(circle, #2ec4b6 2px, transparent 2.5px),
+    linear-gradient(135deg, transparent 80%, #2ec4b6 80%, #2ec4b6 82%, transparent 82%),
+    linear-gradient(45deg, transparent 80%, #ff6f91 80%, #ff6f91 82%, transparent 82%);
+  background-size:
+    30px 30px,
+    200px 200px,
+    200px 200px;
+  background-position:
+    250px 80px,
+    right 60px top 40px,
+    right 0px top 0px;
+  background-repeat: no-repeat;
+}
+
+/* Zigzag */
+.placement-bg-decor::after {
+  content: '';
+  position: absolute;
+  left: 300px; top: 120px;
+  width: 80px; height: 40px;
+  background: repeating-linear-gradient(135deg, #2ec4b6, #2ec4b6 4px, transparent 4px, transparent 8px);
+  clip-path: polygon(0 50%, 10% 0, 20% 50%, 30% 0, 40% 50%, 50% 0, 60% 50%, 70% 0, 80% 50%, 90% 0, 100% 50%, 100% 100%, 0 100%);
+  opacity: 0.7;
+}
+
+
